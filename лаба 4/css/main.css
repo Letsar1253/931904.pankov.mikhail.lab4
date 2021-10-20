@@ -1,0 +1,179 @@
+body
+{
+margin: 0;
+background-color: #edeef0;
+font-family: sans-serif;
+}
+
+header
+{
+background-color: #507299;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+header img
+{
+margin-top: 10px;
+margin-left: 15%;
+margin-bottom: 5px;
+}
+
+section
+{
+margin-top:15px;
+display: flex;
+width: 60%;
+margin-left: 20%;
+justify-content:space-around;
+align-items: flex-start;
+}
+
+nav
+{
+min-width: 200px;
+max-width: 200px;
+margin: 0;
+}
+
+ul
+{
+margin-right: 20px;
+padding: 0;
+margin:0;
+}
+
+li
+{
+list-style-type: none;
+margin:0;
+padding: 0;
+}
+
+a
+{
+  padding: 10px 0;
+color: #2e5473;
+display: block;
+text-decoration:none;
+}
+
+a:hover
+{
+background-color: #e1e5eb;
+}
+
+.ribbon
+{
+padding-right: 150px;
+}
+
+.ribbon .content
+{
+width: 440px;
+text-align: justify;
+padding: 15px;
+}
+
+.content
+{
+background-color: white;
+border: #d0d0d0 1px solid;
+border-radius: 10px;
+margin-bottom:20px;
+}
+
+.content img
+{
+width:inherit;
+}
+
+aside
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top:63px;
+}
+
+aside .content
+{
+width: 130px;
+padding: 10px;
+}
+
+aside .content div
+{
+margin: 10px 0;
+background-color: #edeef0;
+}
+
+.LikeComment
+{
+display:flex;
+justify-content: space-between;
+color:#2e5473;
+border-top: #d0d0d0 3px solid;
+margin-top:10px;
+padding-top: 10px;
+}
+
+footer
+{
+  background-color: white;
+  color: #d0d0d0;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 0;
+}
+
+@media screen and (max-width: 1000px)
+{
+  aside
+  {
+    display: none;
+  }
+
+  .ribbon
+  {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  section
+  {
+    flex-direction:column;
+  }
+
+  ul
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  nav
+  {
+    min-width:472px;
+    max-width:472px;
+  }
+}
+
+
+.ribbon ::selection
+{
+  background-color: #e1e5eb;
+  color: green;
+}
+
+aside ::selection
+{
+  color: green;
+  background-color: #e1e5eb;
+}
